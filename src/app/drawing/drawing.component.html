@@ -1,0 +1,23 @@
+<section class="flex p-5">
+    <div class="w-1/12 mx-5">
+        <app-toolbox [drawing]="this"></app-toolbox>
+        <div>
+            <div class="w-32 p-2 border ">
+                <label>Stroke color</label>
+                <input class="w-28" type="color" [(ngModel)]="strokeColor" />
+            </div>
+    
+            <div class="w-32 p-2 border ">
+                <label>Stroke size:</label>
+                <input class="w-28" type="range" min="1" max="10" [(ngModel)]="strokeSize">
+            </div>
+        </div>
+    </div>
+    <div 
+    id="canvas" 
+    class="border "
+    >
+    </div>
+    
+   
+</section>

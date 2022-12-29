@@ -1,0 +1,26 @@
+<div class="flex flex-col">
+    <button class="flex flex-col items-center w-32 p-2 border bg-blue-800" (click)="addRectangle()">
+        <fa-icon class=" align-middle text-4xl text-white" [icon]="faSquare"></fa-icon>
+        <span class="text-xs text-white ">Rectangle</span>
+    </button>
+    <button class="flex flex-col items-center w-32 p-2 border  bg-blue-800" (click)="addCircle()">
+        <fa-icon class="text-4xl  text-white" [icon]="faCircle"></fa-icon>
+        <span class="text-xs  text-white">Circle</span>
+    </button>
+    <button class="flex flex-col items-center w-32 p-2 border  bg-blue-800" (click)="addSquare()">
+        <fa-icon class="text-4xl text-white" [icon]="faSquare"></fa-icon>
+        <span class="text-xs  text-white">Square</span>
+    </button>
+    <button class="flex flex-col items-center w-32 p-2 border  bg-blue-800" (click)="addVerticalLine()"> 
+        <fa-icon class="text-4xl text-white" [icon]="faVLine"></fa-icon>
+        <span class="text-xs  text-white">Vertical Line</span>
+    </button>
+    <button class="flex flex-col items-center w-32 p-2 border  bg-blue-800" (click)="addHorizontalLine()">
+        <fa-icon class="text-4xl text-white" [icon]="faHline"></fa-icon>
+        <span class="text-xs  text-white">Horizontal Line</span>
+    </button>
+    <button class="flex flex-col items-center w-32 p-2   bg-blue-800" (click)="addPen()">
+        <fa-icon class="text-4xl text-white " [icon]="faPen"></fa-icon>
+        <span class="text-xs  text-white">Pencil</span>
+    </button>
+</div>

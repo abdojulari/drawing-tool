@@ -1,0 +1,13 @@
+<div #ele class="w-56 bg-yellow-300 m-5 p-2 element cursor-move" >
+    <div  class="w-10">
+        <span class="cursor-pointer  px-1  items-center bg-black text-white rounded-lg" (click)="onDismiss($event)">x</span>
+    </div>
+      <div class="content h-36 cursor-default outline-0" contenteditable="true" (blur)="onFocusOut($event)">
+          <ng-content></ng-content>
+      </div>
+    <div class="footer">
+        <button class="" (click)="record($event)">
+            <fa-icon class="text-2xl items-center text-black" [icon]="faMicrophone"></fa-icon>
+        </button>
+    </div>
+</div>

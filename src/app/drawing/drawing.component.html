@@ -11,13 +11,22 @@
                 <label>Stroke size:</label>
                 <input class="w-28" type="range" min="1" max="10" [(ngModel)]="strokeSize">
             </div>
+            <div class="w-32 p-2 border">
+                <button class="" (click)="addNote()" >
+                    <fa-icon class="text-2xl items-center text-black" [icon]="faAddress"></fa-icon>
+                </button>
+            </div>
         </div>
     </div>
-    <div 
-    id="canvas" 
-    class="border "
-    >
+    <div id="canvas" class="border droppable w-full">
+        <div class="flex flex-wrap p-2 m-5">
+            <app-note 
+            *ngFor="let note of notes; let i = index" 
+            (dismiss)="deleteNote($event)" 
+            (focusout)="saveNote($event)" 
+            id="{{note.id}}">
+            {{note.content}}
+          </app-note>
+        </div>
     </div>
-    
-   
 </section>

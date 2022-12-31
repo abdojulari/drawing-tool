@@ -8,13 +8,16 @@ import { ToolBoxComponent } from './tool-box/tool-box.component';
 import { FormsModule } from '@angular/forms'; 
 import { ReactiveFormsModule } from '@angular/forms';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { NoteComponent } from './note/note.component';
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
     DrawingComponent,
-    ToolBoxComponent
+    ToolBoxComponent,
+    NoteComponent
   ],
   imports: [
     BrowserModule,
